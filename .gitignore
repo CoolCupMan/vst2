@@ -1,0 +1,9 @@
+build/
+cmake-build-*/
+dist/
+*.wav
+.vs/
+.vscode/
+.idea/
+.DS_Store
+__pycache__/
