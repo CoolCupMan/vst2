@@ -37,7 +37,7 @@ jobs:
         shell: bash
         run: |
           if [ "$RUNNER_OS" = "Windows" ]; then
-            cmake -S . -B build -G "Visual Studio 17 2022" -A x64 -DALGOREMIX_BUILD_TOOLS=ON
+            cmake -S . -B build -A x64 -DALGOREMIX_BUILD_TOOLS=ON   # default generator = newest installed Visual Studio
           elif [ "$RUNNER_OS" = "Linux" ]; then
             cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release -DALGOREMIX_BUILD_TOOLS=ON
           else

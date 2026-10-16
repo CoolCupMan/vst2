@@ -37,11 +37,11 @@ the plugin on Windows, macOS and Linux. To get it, open the latest run under the
 It contains `AlgoRemix.vst3`.
 
 ### Option B: build it yourself
-You need CMake 3.22+ and a C++17 compiler (Visual Studio 2022 on Windows, Xcode on macOS).
+You need CMake 3.22+ and a C++17 compiler (Visual Studio 2022 or newer on Windows, Xcode on macOS).
 JUCE is downloaded automatically.
 
 ```bash
-cmake -S . -B build                 # add -G "Visual Studio 17 2022" -A x64 on Windows
+cmake -S . -B build                 # add -A x64 on Windows
 cmake --build build --config Release
 ```
 
